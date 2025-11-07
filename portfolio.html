@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: antiquewhite;
+            color: brown;
+        }     
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li a{
+            display: block;
+        }
+        li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/portfolio.html">Home</a></li>
+            <li><a href="./contactus.html">Contact</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h2>Interesting information</h2>
+    <img src="./Lion.jpeg" alt="">
+    <br />
+    <button onclick="Lion()">Read more</button>
+    <p id="lion-info"></p>
+    <img src="./Tiger.jpeg" alt="">
+    <br />
+    <button onclick="Tiger()">Read more</button>
+    <p id="tiger-info"></p>
+
+    <script>
+        function Tiger(){
+            document.getElementById("tiger-info").innerHTML = "The tiger (Panthera tigris) is the largest species of the cat family and an iconic apex predator native to Asia, known for its distinctive orange fur and vertical black stripes. The species is currently listed as Endangered on the IUCN Red List, with fewer than 4,000 mature individuals estimated to remain in the wild due to threats like habitat loss and poaching.The tiger (Panthera tigris) is the largest species of the cat family and an iconic apex predator native to Asia, known for its distinctive orange fur and vertical black stripes. The species is currently listed as Endangered on the IUCN Red List, with fewer than 4,000 mature individuals estimated to remain in the wild due to threats like habitat loss and poaching."
+        }
+
+
+        function Lion(){
+            document.getElementById("lion-info").innerHTML = "The lion (Panthera leo) is a large, social cat native to Africa and a small, isolated population in India. Known for living in family groups called prides, lions are apex predators that play a crucial role in their ecosystems.Lions have a muscular, broad-chested body with a short, rounded head and round ears. A lion's coat is typically yellow-gold, and adult males are the only cats to grow a distinctive mane, which can range from blond to black.Males typically weigh between 150–250 kg (330–550 lbs), while females are slightly smaller, weighing 120–182 kg (265–401 lbs). Lions can measure almost 2.5 meters in length." 
+
+        }
+    </script>
+    
+</body>
+</html>
