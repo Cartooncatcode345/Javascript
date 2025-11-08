@@ -6,6 +6,30 @@
     <title>changing colurs</title>
 </head>
 <body>
+
+   <div class="colour-text"><h2 id="text">experiment with this text</h2></div>
+
     
+   <div class="buttons"> <button onclick="changetoRed()">Turn the text into red</button>
+    <button onclick="changetoGreen()">turn the text into green</button>
+    <button onclick="changetoBlue()">Turn the text into blue</button></div>
+
+
+    <script>
+        function changetoRed(){
+            var div = document.getElementById("text")
+            div.style.color = "red"
+        }
+
+        function changetoGreen(){
+            var div = document.getElementById("text")
+            div.style.color = "green"
+        }
+
+        function changetoBlue(){
+            var div = document.getElementById("text")
+            div.style.color = "blue"
+        }
+    </script>
 </body>
 </html>
